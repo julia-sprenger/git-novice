@@ -171,7 +171,7 @@ If git is not already configured to cache your credentials you can set a timewin
 git config --global credential.helper "cache --timeout=86400"
 ```
 
-Note that the time is set in _minutes_, here 86400 indicates the number of seconds in a day (60 x 60 x 24) seconds.
+Note that the time is set in _seconds_, here 86400 indicates the number of seconds in a day (60 x 60 x 24) seconds.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
