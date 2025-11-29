@@ -18,6 +18,16 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+::::::::::::::::::::::::::::::::::::::::: callout
+
+For OECD projects ensure to follow OECD licensing guidelines.
+Clarify ownership and licensing options available for a given project 
+before publishing it.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 As an open source project, Software Carpentry relies on volunteers to create our lessons and includes a file named `LICENSE` or `LICENSE.txt` file in all public lesson repositories. This file is used to specify that all materials are freely available under the Creative Commons Attribution license. Without a file that clearly states under which license any public source code, manuscript or other creative works is being made available, the default copyright laws apply. To learn more about licensing and open source, you can read more about [Github's description of licenses] and the [legal grounds for open source licensing].
 
 A license solves this problem by granting rights to others (the

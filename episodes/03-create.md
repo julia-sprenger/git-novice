@@ -22,10 +22,10 @@ we can start using it.
 
 We will help Alfredo with his new project, create a repository with all his recipes.
 
-First, let's create a new directory in the `Desktop` folder for our work and then change the current working directory to the newly created one:
+First, let's create a new directory in the V drive for our work and then change the current working directory to the newly created one:
 
 ```bash
-$ cd ~/Desktop
+$ cd V:
 $ mkdir recipes
 $ cd recipes
 ```
@@ -94,7 +94,7 @@ Alfredo creates a `desserts` project inside his `recipes`
 project with the following sequence of commands:
 
 ```bash
-$ cd ~/Desktop    # return to Desktop directory
+$ cd V:           # return to Data drive
 $ cd recipes      # go into recipes directory, which is already a Git repository
 $ ls -a           # ensure the .git subdirectory is still present in the recipes directory
 $ mkdir desserts # make a sub-directory recipes/desserts

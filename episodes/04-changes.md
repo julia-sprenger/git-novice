@@ -24,7 +24,7 @@ First let's make sure we're still in the right directory.
 You should be in the `recipes` directory.
 
 ```bash
-$ cd ~/Desktop/recipes
+$ cd V:/recipes
 ```
 
 Let's create a file called `guacamole.md` that contains the basic structure of our first recipe.
@@ -824,7 +824,7 @@ Initialise git:
 $ git init
 ```
 
-Create your biography file `me.txt` using `nano` or another text editor.
+Create your biography file `me.txt` using VSCode or another text editor.
 Once in place, add and commit it to the repository:
 
 ```bash

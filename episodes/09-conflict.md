@@ -17,9 +17,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-As soon as people can work in parallel, they'll likely step on each other's
-toes.  This will even happen with a single person: if we are working on
-a piece of software on both our laptop and a server in the lab, we could make
+As soon as people can work in parallel, they'll likely step on each other's toes.  This will even happen with a single person: if we are working on a piece of software on both our laptop and a server in the lab, we could make
 different changes to each copy.  Version control helps us manage these
 [conflicts](../learners/reference.md#conflict) by giving us tools to
 [resolve](../learners/reference.md#resolve) overlapping changes.
@@ -82,7 +80,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
 Total 3 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To https://github.com/alflin/recipes.git
+To https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git
    29aba7c..dabb4c8  main -> main
 ```
 
@@ -124,9 +122,9 @@ $ git push origin main
 ```
 
 ```output
-To https://github.com/alflin/recipes.git
+To https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes
  ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'https://github.com/alflin/recipes.git'
+error: failed to push some refs to 'https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -292,7 +290,7 @@ Compressing objects: 100% (6/6), done.
 Writing objects: 100% (6/6), 645 bytes | 645.00 KiB/s, done.
 Total 6 (delta 4), reused 0 (delta 0)
 remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
-To https://github.com/alflin/recipes.git
+To https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git
    dabb4c8..2abf2b1  main -> main
 ```
 
@@ -310,7 +308,7 @@ remote: Counting objects: 100% (10/10), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
 Unpacking objects: 100% (6/6), done.
-From https://github.com/alflin/recipes
+From https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes
  * branch            main     -> FETCH_HEAD
     dabb4c8..2abf2b1  main     -> origin/main
 Updating dabb4c8..2abf2b1
@@ -366,7 +364,7 @@ Clone the repository created by your instructor.
 Add a new file to it,
 and modify an existing file (your instructor will tell you which one).
 When asked by your instructor,
-pull her changes from the repository to create a conflict,
+pull their changes from the repository to create a conflict,
 then resolve it.
 
 
@@ -376,9 +374,7 @@ then resolve it.
 
 ## Conflicts on Non-textual files
 
-What does Git do
-when there is a conflict in an image or some other non-textual file
-that is stored in version control?
+What does Git do when there is a conflict in an image or some other non-textual file that is stored in version control?
 
 :::::::::::::::  solution
 
@@ -424,9 +420,9 @@ $ git push origin main
 ```
 
 ```output
-To https://github.com/alflin/recipes.git
+To https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git
  ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'https://github.com/alflin/recipes.git'
+error: failed to push some refs to 'https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git'
 hint: Updates were rejected because the remote contains work that you do
 hint: not have locally. This is usually caused by another repository pushing
 hint: to the same ref. You may want to first integrate the remote changes
@@ -449,7 +445,7 @@ remote: Counting objects: 3, done.
 remote: Compressing objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0)
 Unpacking objects: 100% (3/3), done.
-From https://github.com/alflin/recipes.git
+From https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git
  * branch            main     -> FETCH_HEAD
    6a67967..439dc8c  main     -> origin/main
 warning: Cannot merge binary files: guacamole.jpg (HEAD vs. 439dc8c08869c342438f6dc4a2b615b05b93c76e)
