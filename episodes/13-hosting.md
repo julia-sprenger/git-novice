@@ -16,6 +16,18 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+:::::::::::::::::::::::::::::::::::::::::: callout
+
+The discussion for hosting options below is intended
+for research institutes. For OECD projects and publications 
+always use OECD and OECD approved services.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
 After [choosing a license](11-licensing.md),
 another big question for groups that want to open up their work is where to
 host their code and data.  One option is for the lab, the department, or the

@@ -35,23 +35,15 @@ $ git config --global user.email "a.linguini@ratatouille.fr"
 ```
 
 Please use your own name and email address instead of Alfredo's. This user name and email will be associated with your subsequent Git activity,
-which means that any changes pushed to
+which means that any changes pushed to any git server like
+[Algobank](https://gitlab.algobank.oecd.org) 
 [GitHub](https://github.com/),
 [BitBucket](https://bitbucket.org/),
 [GitLab](https://gitlab.com/) or
-another Git host server
-after this lesson will include this information.
+will include this information once you upload git content to the server.
 
-For this lesson, we will be interacting with [GitHub](https://github.com/) and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy].
+For this lesson, we will be interacting with the [Algobank](https://gitlab.algobank.oecd.org) and so the email address used should be your official OECD email address.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Keeping your email private
-
-If you elect to use a private email address with GitHub, then use GitHub's no-reply email address for the `user.email` value. It looks like `ID+username@users.noreply.github.com`. You can look up your own address in your GitHub [email settings](https://github.com/settings/emails).
-
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -68,15 +60,7 @@ Though it is beyond the scope of this lesson, you can read more about this issue
 
 You can change the way Git recognizes and encodes line endings
 using the `core.autocrlf` command to `git config`.
-The following settings are recommended:
-
-On macOS and Linux:
-
-```bash
-$ git config --global core.autocrlf input
-```
-
-And on Windows:
+The following settings are recommended for Windows:
 
 ```bash
 $ git config --global core.autocrlf true
@@ -168,27 +152,6 @@ And if necessary, change your configuration using the
 same commands to choose another editor or update your email address.
 This can be done as many times as you want.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
-
-## Proxy
-
-In some networks you need to use a
-[proxy](https://en.wikipedia.org/wiki/Proxy_server). If this is the case, you
-may also need to tell Git about the proxy:
-
-```bash
-$ git config --global http.proxy proxy-url
-$ git config --global https.proxy proxy-url
-```
-
-To disable the proxy, use
-
-```bash
-$ git config --global --unset http.proxy
-$ git config --global --unset https.proxy
-```
-
-::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :::::::::::::::::::::::::::::::::::::::::  callout
 
@@ -212,8 +175,6 @@ $ git help
 ```
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
-
-[git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
 
 
 :::::::::::::::::::::::::::::::::::::::: keypoints

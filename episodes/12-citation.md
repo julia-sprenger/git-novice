@@ -16,6 +16,15 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+:::::::::::::::::::::::::::::::::::::::: callout
+
+For software as well as data projects always follow 
+OECD citation best practices.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 You may want to include a file called `CITATION` or `CITATION.txt`
 that describes how to reference your project;
 the [one for Software
