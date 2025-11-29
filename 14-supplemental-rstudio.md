@@ -54,7 +54,6 @@ First let's make sure that Git is installed on your computer.
 Open your shell on Mac or Linux, or on Windows open the command prompt
 and then type:
 
-- `which git` (macOS, Linux)
 - `where git` (Windows)
 
 If there is no version of Git on your computer, please follow the
@@ -62,9 +61,6 @@ If there is no version of Git on your computer, please follow the
 in the setup of this lesson to install Git now. Next open your shell or command prompt
 and type `which git` (macOS, Linux), or `where git` (Windows).
 Copy the path to the git executable.
-
-On one Windows computer which had GitHub Desktop installed on it, the path was:
-`C:/Users/UserName/AppData/Local/GitHubDesktop/app-1.1.1/resources/app/git/cmd/git.exe`
 
 NOTE: The path on your computer will be somewhat different.
 
