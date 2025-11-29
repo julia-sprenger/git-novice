@@ -260,7 +260,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="07-algobank.html">7. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -375,12 +375,12 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="../instructor/07-github.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="../instructor/07-algobank.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/09-conflict.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="../instructor/07-github.html" rel="prev">
+        <a class="chapter-link" href="../instructor/07-algobank.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Remotes in GitHub
         </a>
@@ -447,37 +447,32 @@ access on GitHub, because both ‘partners’ are you.</p>
 </div>
 </div>
 </div>
-<p>The Owner needs to give the Collaborator access. In your repository
-page on GitHub, click the “Settings” button on the right, select
-“Collaborators”, click “Add people”, and then enter your partner’s
-username.</p>
-<figure><img src="../fig/github-add-collaborators.png" alt='A screenshot of the GitHub Collaborators settings page, which is accessed by clicking "Settings" then "Collaborators"' class="figure mx-auto d-block"></figure><p>To accept access to the Owner’s repo, the Collaborator needs to go to
-<a href="https://github.com/notifications" class="external-link">https://github.com/notifications</a>
-or check for email notification. Once there she can accept access to the
-Owner’s repo.</p>
+<p>The project Owner needs to give the Oollaborator access. In the
+CARPENTRIES_PYTHON group all workshop participants have
+<code>maintainer</code> permissions on all projects and can therefore
+contribute to all projects in that group.</p>
 <p>Next, the Collaborator needs to download a copy of the Owner’s
-repository to her machine. This is called “cloning a repo”.</p>
-<p>The Collaborator doesn’t want to overwrite her own version of
+repository to their machine. This is called “cloning a repo”.</p>
+<p>The Collaborator doesn’t want to overwrite their own version of
 <code>recipes.git</code>, so needs to clone the Owner’s repository to a
 different location than her own repository with the same name.</p>
-<p>To clone the Owner’s repo into her <code>Desktop</code> folder, the
+<p>To clone the Owner’s repo into her <code>V:</code> drive, the
 Collaborator enters:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> git clone git@github.com:alflin/recipes.git ~/Desktop/alflin-recipes</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> git clone https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git V:/alfredos_recipes</span></code></pre>
 </div>
-<p>Replace ‘alflin’ with the Owner’s username.</p>
 <p>If you choose to clone without the clone path
-(<code>~/Desktop/alflin-recipes</code>) specified at the end, you will
-clone inside your own recipes folder! Make sure to navigate to the
-<code>Desktop</code> folder first.</p>
+(<code>V:/alfredos-recipes</code>) specified at the end, you will clone
+inside your own recipes folder! Make sure to navigate to root level of
+th <code>V:\</code> drive first.</p>
 <figure><img src="../fig/github-collaboration.svg" alt='A diagram showing that "git clone" can create a copy of a remote GitHub repository, allowing a second person to create their own local repository that they can make changes to.' class="figure mx-auto d-block"></figure><p>The Collaborator can now make a change in her clone of the Owner’s
 repository, exactly the same way as we’ve been doing before:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> cd ~/Desktop/alflin-recipes</span>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> cd V:/alfredos_recipes</span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">$</span> nano hummus.md</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">$</span> cat hummus.md</span></code></pre>
 </div>
@@ -519,16 +514,16 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 306 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/alflin/recipes.git
+To https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes.git
    9272da5..29aba7c  main -&gt; main</code></pre>
 </div>
 <p>Note that we didn’t have to create a remote called
 <code>origin</code>: Git uses this name by default when we clone a
 repository. (This is why <code>origin</code> was a sensible choice
 earlier when we were setting up remotes by hand.)</p>
-<p>Take a look at the Owner’s repository on GitHub again, and you should
-be able to see the new commit made by the Collaborator. You may need to
-refresh your browser to see the new commit.</p>
+<p>Take a look at the Owner’s repository on Algobank project again, and
+you should be able to see the new commit made by the Collaborator. You
+may need to refresh your browser to see the new commit.</p>
 <div id="some-more-about-remotes" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -576,8 +571,8 @@ this to change <code>upstream</code> to <code>alfred</code>.</li>
 </ul></div>
 </div>
 </div>
-<p>To download the Collaborator’s changes from GitHub, the Owner now
-enters:</p>
+<p>To download the Collaborator’s changes from the Algobank, the Owner
+now enters:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -591,7 +586,7 @@ remote: Counting objects: 100% (4/4), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
-From https://github.com/alflin/recipes
+From https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON/alfredos_recipes
  * branch            main     -&gt; FETCH_HEAD
    9272da5..29aba7c  main     -&gt; origin/main
 Updating 9272da5..29aba7c
@@ -601,7 +596,7 @@ Fast-forward
  create mode 100644 hummus.md</code></pre>
 </div>
 <p>Now the three repositories (Owner’s local, Collaborator’s local, and
-Owner’s on GitHub) are back in sync.</p>
+Owner’s on Algobank) are back in sync.</p>
 <div id="a-basic-collaborative-workflow" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -670,22 +665,22 @@ changes output in the terminal.</p>
 </div>
 </div>
 </div>
-<div id="comment-changes-in-github" class="callout discussion">
+<div id="comment-changes-on-the-webinterface" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="comment-changes-in-github" class="callout-inner">
-<h3 class="callout-title">Comment Changes in GitHub</h3>
+<div id="comment-changes-on-the-webinterface" class="callout-inner">
+<h3 class="callout-title">Comment Changes on the Webinterface</h3>
 <div class="callout-content">
 <p>The Collaborator has some questions about one line change made by the
 Owner and has some suggestions to propose.</p>
-<p>With GitHub, it is possible to comment on the diff of a commit. Over
-the line of code to comment, a blue comment icon appears to open a
+<p>With the Algobank, it is possible to comment on the diff of a commit.
+Over the line of code to comment, a blue comment icon appears to open a
 comment window.</p>
-<p>The Collaborator posts her comments and suggestions using the GitHub
-interface.</p>
-</div>
+<p>The Collaborator posts their comments and suggestions using the
+GitHub interface.</p>
+<figure><img src="../fig/Algobank_comment_on_line.png" alt="To comment on a single line of a diff, cover over the begining of the line until a blue comment icon appears." class="figure mx-auto d-block"></figure></div>
 </div>
 </div>
 <div id="version-history-backup-and-version-control" class="callout discussion">
@@ -698,9 +693,9 @@ interface.</p>
 Control</h3>
 <div class="callout-content">
 <p>Some backup software can keep a history of the versions of your
-files. They also allows you to recover specific versions. How is this
+files. They also allow you to recover specific versions. How is this
 functionality different from version control? What are some of the
-benefits of using version control, Git and GitHub?</p>
+benefits of using version control, Git and the Algobank?</p>
 </div>
 </div>
 </div>
@@ -723,12 +718,12 @@ up.</li>
 
       </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="../instructor/07-github.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="../instructor/07-algobank.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/09-conflict.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="../instructor/07-github.html" rel="prev">
+        <a class="chapter-link" href="../instructor/07-algobank.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Remotes in GitHub
         </a>

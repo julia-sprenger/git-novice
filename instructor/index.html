@@ -264,7 +264,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="07-github.html">7. Remotes in GitHub</a>
+        <a href="07-algobank.html">7. Remotes in GitHub</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -496,7 +496,7 @@ How can I tell Git to ignore files I don’t want to track?
 <span class="visually-hidden">Duration: </span>01h 10m
 </td>
 <td>
- 7. <a href="07-github.html">Remotes in GitHub</a>
+ 7. <a href="07-algobank.html">Remotes in GitHub</a>
 </td>
 <td>
 How do I share my changes with others on the web?
@@ -577,58 +577,41 @@ Finish
       The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
       </p>
       </section><section id="setup"><section><h2 class="section-heading" id="installing-git">Installing Git<a class="anchor" aria-label="anchor" href="#installing-git"></a></h2>
-<hr class="half-width"><p>Since several Carpentries lessons rely on Git, please see <a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">this
-section of the workshop template</a> for instructions on installing Git
-for various operating systems.</p>
-<ul><li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on Windows</a></li>
-<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on MacOS</a></li>
-<li><a href="https://carpentries.github.io/workshop-template/install_instructions/#git" class="external-link">Git
-installation on Linux</a></li>
-</ul></section><section><h2 class="section-heading" id="creating-a-github-account">Creating a GitHub Account<a class="anchor" aria-label="anchor" href="#creating-a-github-account"></a></h2>
-<hr class="half-width"><p>You will need an account for <a href="https://github.com" class="external-link">GitHub</a>
-to follow episodes 7 &amp; 8 in this lesson.</p>
-<ol style="list-style-type: decimal"><li>Go to <a href="https://github.com" class="external-link uri">https://github.com</a> and follow the “Sign up” link at the
-top-right of the window.</li>
-<li>Follow the instructions to create an account.</li>
-<li>Verify your email address with GitHub.</li>
-<li>Configure multifactor authentication (see below).</li>
-</ol><div class="section level3">
-<h3 id="multi-factor-authentication">Multi-factor Authentication<a class="anchor" aria-label="anchor" href="#multi-factor-authentication"></a></h3>
-<p>In 2023, GitHub introduced a requirement for all accounts to have <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication" class="external-link">multi-factor
-authentication (2FA)</a> configured for extra security. Several options
-exist for setting up 2FA, which are summarised here:</p>
-<ol style="list-style-type: decimal"><li>If you already use an authenticator app, like <a href="https://support.google.com/accounts/answer/1066447?hl=en&amp;co=GENIE.Platform%3DiOS&amp;oco=0" class="external-link">Google
-Authenticator</a> or <a href="https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app" class="external-link">Duo
-Mobile</a> on your smartphone for example, <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app" class="external-link">add
-GitHub to that app</a>.</li>
-<li>If you have access to a smartphone but do not already use an
-authenticator app, install one and <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-totp-mobile-app" class="external-link">add
-GitHub to the app</a>.</li>
-<li>If you do not have access to a smartphone or do not want to install
-an authenticator app, you have two options:
-<ol style="list-style-type: decimal"><li>
-<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-text-messages" class="external-link">set
-up 2FA via text message</a> (<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/countries-where-sms-authentication-is-supported" class="external-link">list
-of countries where authentication by SMS is supported</a>), or</li>
-<li>
-<a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key" class="external-link">use
-a hardware security key</a> like <a href="https://www.yubico.com/products/yubikey-5-overview/" class="external-link">YubiKey</a>
-or the <a href="https://store.google.com/us/product/titan_security_key?hl=en-US&amp;pli=1" class="external-link">Google
-Titan key</a>.</li>
-</ol></li>
-</ol><p>The GitHub documentation provides <a href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication" class="external-link">more
-details about configuring 2FA</a>.</p>
-<hr></div>
-</section><section><h2 class="section-heading" id="preparing-your-working-directory">Preparing Your Working Directory<a class="anchor" aria-label="anchor" href="#preparing-your-working-directory"></a></h2>
-<hr class="half-width"><p>We’ll do our work in the <code>Desktop</code> folder so make sure you
+<hr class="half-width"><p>This lesson requires git. Check the workshop setup instruction on how
+to install <code>git bash</code>.</p>
+</section><section><h2 class="section-heading" id="algobank-account-carpentries-group">Algobank Account &amp; Carpentries Group<a class="anchor" aria-label="anchor" href="#algobank-account-carpentries-group"></a></h2>
+<hr class="half-width"><p>You will need access to your <a href="https://gitlab.algobank.oecd.org/" class="external-link">OECD Algobank</a> account to
+follow episodes 7 &amp; 8 in this lesson.</p>
+<ol style="list-style-type: decimal"><li>Go to <a href="https://gitlab.algobank.oecd.org/" class="external-link uri">https://gitlab.algobank.oecd.org/</a>
+</li>
+<li>Sign in with your OECD credentials. Note that you might need to be
+connected to the OECD network, use the OECD VPN if you can’t sign in
+from another network.</li>
+<li>In the navigation bar select <code>Groups</code>. The list of groups
+accessible for you should contain the group dedicated for this lesson:
+<a href="https://gitlab.algobank.oecd.org/CARPENTRIES_PYTHON" class="external-link">CARPENTRIES_PYTHON</a>
+</li>
+</ol><figure><img src="../fig/Algobank_group.png" class="figure mx-auto d-block"></figure><div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>To be able to log sign in the Algobank you will need to be member of
+at least one OECD Data project. For more details on Data projects follow
+the <a href="https://oecdcampus.oecd.org/Training/view/4473516" class="external-link">Working
+with Data at the OECD E-learning course</a>.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="preparing-your-working-directory">Preparing Your Working Directory<a class="anchor" aria-label="anchor" href="#preparing-your-working-directory"></a></h2>
+<hr class="half-width"><p>We’ll do our work in the <code>V:\</code> folder so make sure you
 change your working directory to it with:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> cd</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="ex">$</span> cd Desktop</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> cd V:</span></code></pre>
 </div>
 </section></section></main><nav class="bottom-pagination mx-md-4" aria-label="Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link float-end" href="../instructor/01-basics.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
