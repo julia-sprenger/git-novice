@@ -127,6 +127,8 @@ He sets the expiration date for in a year, since he plans to work on Algobank pr
 
 Click on `Create token` for the token to be generated. For security reasons this page will only be displayed once, so use the `copy token` button to put the token in your clipboard and save the token in your password manager of choice.
 
+For more documentation on PAT setup, see the [OECD Service-now article](https://oecd.service-now.com/dhelp?id=kb_article_view&sys_kb_id=cbc9be8bc325e610e36d1405e401319d).
+
 ## 4\. Push local changes to a remote
 
 Now that authentication is setup, we can return to the remote.  This command will push the changes from
